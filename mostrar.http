@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/tareas
 
 ### obteter un empleado
-GET http://localhost:3000/api/tareas/:1
+GET http://localhost:3000/api/tareas/1
 ### crear un nuevo empleado
 POST http://localhost:3000/api/tareas
 Content-Type: application/json
@@ -15,23 +15,12 @@ Content-Type: application/json
 }
 
 
-### modificar un empleado (PUT - recurso completo e idempotente)
-PUT http://localhost:3000/api/tareas/3
-Content-Type: application/json
-
-{
-    "id": "3",
-    "materia": "Quimica",
-    "fechaentrega": "05/10/2025",
-    "numerotarea": "6"
-}
-
 ### modificar un atrubuto de un empleado 
 PATCH http://localhost:3000/api/tareas/2
 Content-Type: application/json
 
 {
-    "fechaentrega": ""
+    "fechaentrega": "23/02/2025"
 }
 
 ### borrar un tipo producto
