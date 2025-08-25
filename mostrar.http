@@ -1,9 +1,10 @@
-### obteter todos los empleados
+### obteter todas las tareas 
 GET http://localhost:3000/api/tareas
 
-### obteter un empleado
+### obteter una tarea 
 GET http://localhost:3000/api/tareas/1
-### crear un nuevo empleado
+
+### crear una nueva tarea
 POST http://localhost:3000/api/tareas
 Content-Type: application/json
 
@@ -15,7 +16,7 @@ Content-Type: application/json
 }
 
 
-### modificar un atrubuto de un empleado 
+### modificar un atrubuto de una tarea
 PATCH http://localhost:3000/api/tareas/2
 Content-Type: application/json
 
@@ -23,5 +24,5 @@ Content-Type: application/json
     "fechaentrega": "23/02/2025"
 }
 
-### borrar un tipo producto
+### borrar una tarea
 DELETE http://localhost:3000/api/tareas/1
